@@ -76,7 +76,7 @@ console.log("O novo valor de a é", a) // O novo valor de a é 25
 console.log("O novo valor de b é", b) // O novo valor de b é 10
 */
 
-//--------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
 
 
 //DESAFIO
@@ -91,5 +91,4 @@ convOntem = Number(acordouOntem)
 
 console.log("O primeiro número somado ao segundo número resulta em:", convHoje+convOntem)
 console.log("O primeiro número multiplicado pelo segundo número resulta em:", convHoje*convOntem)
-
 
