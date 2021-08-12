@@ -75,33 +75,25 @@
 // 3. Faça um programa, seguindo os passos:
 // a) Crie um array vazio e guarde-o em uma variável, chamada `listaDeTarefas`
 
-const listaDeTarefas = []
 
 // b) Pergunte ao usuário 3 tarefas que ele precise realizar no dia e armazene-as, uma por uma, no array
+const listaDeTarefas = []
+const primeiraTarefa = prompt("Insira 1 tarefa que você realiza no dia a dia")
+const segundaTarefa = prompt("Insira outra tarefa que você realiza no dia a dia")
+const terceiraTarefa = prompt("Insira outra tarefa que você realiza no dia a dia")
 
-const tarefasUsuario01 = prompt("Insira 1 tarefa que você realiza no dia a dia")
-const tarefasUsuario02 = prompt("Insira outra tarefa que você realiza no dia a dia")
-const tarefasUsuario03 = prompt("Insira outra tarefa que você realiza no dia a dia")
+listaDeTarefas.push(primeiraTarefa)
+listaDeTarefas.push(segundaTarefa)
+listaDeTarefas.push(terceiraTarefa)
 
 // c) Imprima o array no console
-
-const listaUsuario = [tarefasUsuario01, tarefasUsuario02, tarefasUsuario03]
-const tamanho = listaUsuario.length
-
-const valor01 = console.log(listaUsuario[tamanho-3])
-const valor02 = console.log(listaUsuario[tamanho-2])
-const valor03 = console.log(listaUsuario[tamanho-1])
-
+console.log(listaDeTarefas)
 
 // d) Peça ao usuário que digite o **índice** de uma tarefa que ele já realizou: 0, 1 ou 2 
-const indiceUsuario = Number(prompt("Insira o indice de uma tarefa 0,1 ou 2"))
-
-
+const tarefaRealizada = prompt("Digite o indice de uma tarefa que já realizou: 0,1 ou 2")
 
 // e) Remova da lista o item de índice que o usuário escolheu.
-
-const elimineiUm = listaUsuario.slice(indiceUsuario, 1)
-
+listaDeTarefas.splice(Number(tarefaRealizada), 1)
 
 // f) Imprima o array no consoleImprima no console
-console.log(elimineiUm)
+console.log(listaDeTarefas)
