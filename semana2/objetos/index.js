@@ -78,6 +78,9 @@
 
 // b) Agora, usando o operador spread, crie um novo objeto mantendo o valor da propriedade nome, mas com uma nova lista de três apelidos. Depois, chame a função feita no item anterior passando como argumento o novo objeto
 
+// const novaPessoa = {...pessoa, apelidos: [
+//   "Tefs", "Tef", "Tefe"]}
+
 //------------------------------------------------------------------
 
 //2 - 2. Resolva os passos a seguir: 
@@ -106,23 +109,23 @@
         // // Retorno: ["Bruno", 5, 23, "Instrutor", 9]
         // ```
 
-        // const pessoa = {
-        //   nome: "Ana",
-        //   idade: 25,
-        //   profissao: "Developer"
-        // }
+        const pessoa = {
+          nome: "Ana",
+          idade: 25,
+          profissao: "Developer"
+        }
 
-        // const pessoa2 = {
-        //   nome: "Laura",
-        //   idade: 8,
-        //   profissao: "Tiktoker"
-        // }
+        const pessoa2 = {
+          nome: "Laura",
+          idade: 8,
+          profissao: "Tiktoker"
+        }
 
-        // const minhaFuncao = (pessoa,pessoa2) => { return [pessoa.nome, pessoa.nome.length, pessoa.idade, pessoa.profissão, pessoa.profissão.length]
-        // }
+        const minhaFuncao = (pessoa,pessoa2) => { return [pessoa.nome, pessoa.nome.length, pessoa.idade, pessoa.profissão, pessoa.profissão.length]
+        }
 
-        // console.log(minhaFuncao(pessoa))
-        // console.log(minhaFuncao(pessoa2))
+        console.log(minhaFuncao(pessoa))
+        console.log(minhaFuncao(pessoa2))
 
   //---------------------3----------------------------------------
 
@@ -143,13 +146,23 @@ sacolao3 = {
   disponibilidade: true
 }
 
-
-function vamosVer (sacolao1, sacolao2, sacolao3) {
-  const carrinhos = [sacolao1, sacolao2, sacolao3]
-  return carrinhos
+function adicionaFrutaNoCarrinho(fruta) {
+  carrinho.push(fruta)
 }
 
-console.log(vamosVer(sacolao1,sacolao2,sacolao3))
+adicionaFrutaNoCarrinho(sacolao1)
+adicionaFrutaNoCarrinho(sacolao2)
+adicionaFrutaNoCarrinho(sacolao3)
+
+console.log(carrinho);
+
+
+// function vamosVer (sacolao1, sacolao2, sacolao3) {
+//   const carrinhos = [sacolao1, sacolao2, sacolao3]
+//   return carrinhos
+// }
+
+// console.log(vamosVer(sacolao1,sacolao2,sacolao3))
 
         
           
