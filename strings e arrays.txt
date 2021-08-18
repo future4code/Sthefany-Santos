@@ -1,0 +1,5 @@
+console.log(nomeAlterado) //CHIJO
+
+console.log(novaFrase) //"Hoje assisti Tarzan, adoro Tarzan!"
+
+console.log(instrutoras) //Amanda, Lais, Chijo
