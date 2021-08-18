@@ -77,23 +77,28 @@
 
 
 // b) Pergunte ao usuário 3 tarefas que ele precise realizar no dia e armazene-as, uma por uma, no array
-const listaDeTarefas = []
-const primeiraTarefa = prompt("Insira 1 tarefa que você realiza no dia a dia")
-const segundaTarefa = prompt("Insira outra tarefa que você realiza no dia a dia")
-const terceiraTarefa = prompt("Insira outra tarefa que você realiza no dia a dia")
+// const listaDeTarefas = []
+// const primeiraTarefa = prompt("Insira 1 tarefa que você realiza no dia a dia")
+// const segundaTarefa = prompt("Insira outra tarefa que você realiza no dia a dia")
+// const terceiraTarefa = prompt("Insira outra tarefa que você realiza no dia a dia")
 
-listaDeTarefas.push(primeiraTarefa)
-listaDeTarefas.push(segundaTarefa)
-listaDeTarefas.push(terceiraTarefa)
+// listaDeTarefas.push(primeiraTarefa)
+// listaDeTarefas.push(segundaTarefa)
+// listaDeTarefas.push(terceiraTarefa)
 
 // c) Imprima o array no console
-console.log(listaDeTarefas)
+// console.log(listaDeTarefas)
 
+// <<<<<<< semana1-aula05
+// =======
+
+
+// >>>>>>> master
 // d) Peça ao usuário que digite o **índice** de uma tarefa que ele já realizou: 0, 1 ou 2 
-const tarefaRealizada = prompt("Digite o indice de uma tarefa que já realizou: 0,1 ou 2")
+// const tarefaRealizada = prompt("Digite o indice de uma tarefa que já realizou: 0,1 ou 2")
 
 // e) Remova da lista o item de índice que o usuário escolheu.
-listaDeTarefas.splice(Number(tarefaRealizada), 1)
+// listaDeTarefas.splice(Number(tarefaRealizada), 1)
 
 // f) Imprima o array no consoleImprima no console
-console.log(listaDeTarefas)
+// console.log(listaDeTarefas)
