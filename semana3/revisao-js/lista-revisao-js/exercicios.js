@@ -25,8 +25,11 @@ console.log(reversoArray(reversoArray))
 
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {
-  
+  let ordenadoArray = novoArray.sort()
+  return ordenadoArray
 }
+
+console.log(retornaArrayOrdenado(ordenadoArray))
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
