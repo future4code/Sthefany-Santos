@@ -7,6 +7,7 @@
 
 let novoArray = ['smith', 'maicon', 'coren']
 
+
 function retornaTamanhoArray(array) {
    let tamanhoArray = (novoArray.length)
    return tamanhoArray
@@ -33,8 +34,12 @@ console.log(retornaArrayOrdenado(ordenadoArray))
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-  
+  let novoArrayNumber = [5,11,14,16,20,23]
+  let numberPares = (novoArrayNumber%2===0)
+  return numberPares
 }
+
+console.log(retornaNumerosPares(numberPares))
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
