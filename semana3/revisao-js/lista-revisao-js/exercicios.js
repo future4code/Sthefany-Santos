@@ -17,8 +17,10 @@ console.log(retornaTamanhoArray(tamanhoArray))
 
 // EXERCÍCIO 02
 function retornaArrayInvertido(array) {
-
+  let reversoArray = novoArray.reverse()
+  return reversoArray
 }
+console.log(reversoArray(reversoArray))
 
 
 // EXERCÍCIO 03
