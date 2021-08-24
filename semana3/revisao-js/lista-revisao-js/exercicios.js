@@ -48,7 +48,9 @@ function retornaNumerosParesElevadosADois(array) {
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-  
+  const maiorNumb = retornaArrayInvertido(retornaArrayOrdenado(array))
+
+  return maiorNumb[0]
 }
 
 // EXERCÍCIO 07
