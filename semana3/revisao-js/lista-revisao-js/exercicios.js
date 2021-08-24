@@ -85,12 +85,29 @@ consolw.log(classificaTriangulo(2,3,2))
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-  
+  const arrayOrdenado = retornaArrayOrdenado(array)
+  const indiceSegundoMenor = 1
+  const indiceSegundoMaior = array.length - 2
+
+  return [
+     arrayOrdenado[indiceSegundoMaior],
+     arrayOrdenado[indiceSegundoMenor]
+  ]
 }
+console.log(retornaSegundoMaiorESegundoMenor)
 
 // EXERCÍCIO 11
+
+let nomeFilme = prompt("Diga um nome de um filme")
+let anoFilme = prompt("Diga o ano do filme")
+let diretorFilme = prompt("Diga o diretor do filme")
+let atoresFilme = prompt("Diga o elenco do filme")
+
 function retornaChamadaDeFilme(filme) {
-   
+  nome: 'O Diabo Veste Prada',
+  ano: 2006,
+  diretor: 'David Frankel',
+  atores: ['Meryl Streep', 'Anne Hathaway', 'Emily Blunt', 'Stanley Tucci']
 }
 
 // EXERCÍCIO 12
