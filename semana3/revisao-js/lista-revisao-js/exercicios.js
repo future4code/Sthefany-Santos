@@ -5,45 +5,45 @@
 
 // EXERCÍCIO 01
 
-let novoArray = ['smith', 'maicon', 'coren']
-
+// let array = ['smith', 'maicon', 'coren']
+let array = [5,11,14,16,20,23]
 
 function retornaTamanhoArray(array) {
-   let tamanhoArray = (novoArray.length)
-   return tamanhoArray
+   return array.length
 }
 
-console.log(retornaTamanhoArray(tamanhoArray))
+console.log(retornaTamanhoArray())
 
 
 // EXERCÍCIO 02
 function retornaArrayInvertido(array) {
-  let reversoArray = novoArray.reverse()
-  return reversoArray
+  return array.reverse()
 }
-console.log(reversoArray(reversoArray))
+console.log(reversoArray())
 
 
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {
-  let ordenadoArray = novoArray.sort()
-  return ordenadoArray
+  array.sort(function (a, b){
+      return a - b;
+  })
+  return array
 }
 
-console.log(retornaArrayOrdenado(ordenadoArray))
+console.log(retornaArrayOrdenado(array))
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-  let novoArrayNumber = [5,11,14,16,20,23]
-  let numberPares = (novoArrayNumber%2===0)
-  return numberPares
-}
+  return array.filter(n => n % 2 === 0)
 
-console.log(retornaNumerosPares(numberPares))
+}
+// console.log(retornaNumerosPares(array))
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
- 
+  let numberPares = (novoArrayNumber%2===0)
+  let numberElevado = numberPares**2
+  return numberPares
 }
 
 // EXERCÍCIO 06
