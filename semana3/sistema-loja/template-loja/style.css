@@ -1,0 +1,46 @@
+.fundo-amarelo {
+  background-color: #e39c22;
+  padding: 5px 5px 5px 5px;
+  border: 0px;
+}
+
+.fundo-cinza {
+  background-color: #dbd9d5;
+  padding: 5px;
+}
+
+.fonte-moderna {
+  font-family: Arial;
+}
+
+#texto-branco {
+  color: aliceblue;
+}
+
+#texto-cinza {
+  color: #5e5e5c;
+}
+
+#texto-confira {
+  font-family: Arial;
+}
+
+.sumir {
+  display: none;
+}
+
+.imagem {
+  max-width: 50px;
+  max-height: 30px;
+  display: inline;
+}
+
+.copy {
+  margin-bottom: 0px;
+}
+
+.images {
+  max-width: 250px;
+  max-height: 200px;
+  display: inline;
+}
