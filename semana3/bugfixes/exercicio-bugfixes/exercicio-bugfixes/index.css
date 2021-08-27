@@ -80,6 +80,7 @@ div img {
 #container-para-comprar {
   background-color: #e7eb90;
   text-align: center;
+  display: block;
 }
 
 #container-para-comprar > p {
