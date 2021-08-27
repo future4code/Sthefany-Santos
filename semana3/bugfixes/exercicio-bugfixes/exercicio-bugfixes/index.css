@@ -80,7 +80,6 @@ div img {
 #container-para-comprar {
   background-color: #e7eb90;
   text-align: center;
-  display: block;
 }
 
 #container-para-comprar > p {
@@ -103,6 +102,7 @@ div:last-child {
 
 table {
   width: 60%;
+  text-align: center;
 }
 
 td button {
@@ -111,6 +111,7 @@ td button {
   height: 30px;
   border-radius: 5px;
   color: black;
+  text-align: center;
 }
 
 .container-do-search {
@@ -126,6 +127,7 @@ td button {
   border-radius: 5px;
   font-size: 10px;
   color: black;
+  text-align: center;
 }
 
 #back-button:hover {
