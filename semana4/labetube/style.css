@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.icone-e-texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Comfortaa";
+}
+
+.labetube-icone {
+  height: 30px;
+  width: auto;
+}
+
+header {
+  display: flex;
+  background-color: #d1d1d1;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  padding: 0 20px;
+  grid-column: 1/-1;
+}
+
+footer {
+  display: flex;
+  background-color: #d1d1d1;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1/-1;
+}
+
+.descricao-video {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 2px 2px darkgray;
+  width: 240px;
+  height: 200px;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.image-card {
+  width: 15rem;
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  margin-top: 10px;
+}

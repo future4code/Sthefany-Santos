@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.icone-e-texto {
+  display: flex;
+  align-items: center;
+  font-family: "Comfortaa";
+}
+
+.labetube-icone {
+  height: 30px;
+  width: auto;
+}
+
+header {
+  display: flex;
+  background-color: #d1d1d1;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  background-color: #d1d1d1;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  margin-top: 30px;
+}
+
+.video-player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+  height: 70vh;
+  padding: 20px;
+}
