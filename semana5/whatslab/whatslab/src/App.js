@@ -12,24 +12,72 @@ const AppContainer = styled.div`
   `
 
 
-const MessagesContainer = styled.div `
- border: 1px solid blue;
+const MessagesContainer = styled.div`
+ flex-grow: 1;
+ padding: 8px;
+ display: flex;
+ flex-direction: column-reverse;
+`
+
+const InputsContainer = styled.div`
+ display: flex;
+`
+
+const NameInput = styled.input`
+ width: 100px;
+`
+const MessagesInput = styled.input`
  flex-grow: 1;
 `
 
-const InputsContainer = styled.div `
- border: 1px solid red;
-`
-
 class App extends React.Component {
+  state = {
+    messages:[],
+    userValue: '',
+    messageValue: ''
+  }
+
+  onChangeUserValue = (event) => {
+    this.setState({userValue: event.target.value})
+  }
+
+  onChangeMessageValue = (event) => {
+    this.setState({messageValue: event.target.value})
+  }
+
+  sendMessage = () => {
+    const newMessage = {
+      user: this.state.userValue,
+      text: this.state.messageValue
+    }
+
+    const newMessagesArray = [newMessage,...this.state.messages]
+
+    this.setState({messages: newMessagesArray, messageValue:''})
+  }
+
   render() {
     return (
       <AppContainer>
-        <MessagesContainer/>
+        <MessagesContainer>
+          {this.state.messages.map((message, index) => {
+            return <p key={index}>
+              <strong>{message.user}</strong>:{message.text}
+            </p>
+          })}
+        </MessagesContainer>
         <InputsContainer>
-          <input placeholder={"Nome"}/>
-          <input placeholder={"Mensagem"}/>
-          <button>Enviar</button>
+          <NameInput 
+            onChange={this.onChangeUserValue} 
+            value={this.state.userValue} 
+            placeholder={"Nome"}
+          />
+          <MessagesInput 
+            onChange={this.onChangeMessageValue} 
+            value={this.state.messageValue} 
+            placeholder={"Mensagem"}
+          />
+          <button onClick={this.sendMessage}>Enviar</button>
         </InputsContainer>
       </AppContainer>
     );
