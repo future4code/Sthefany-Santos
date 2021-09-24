@@ -8,12 +8,12 @@ export default class TelaCadastro extends React.Component {
     email: ""
   }
 
-  handleName = (e) => {
-    this.setState({nome: e.target.value})
+  handleNome = (event) => {
+    this.setState({nome: event.target.value})
   }
 
-  handleEmail = (e) => {
-    this.setState({email: e.target.value})
+  handleEmail = (event) => {
+    this.setState({email: event.target.value})
   }
 
   fazerCadastro = () => {
@@ -22,6 +22,8 @@ export default class TelaCadastro extends React.Component {
       name: this.state.nome,
       email: this.state.email
     }
+    console.log(body)
+
     axios.post(url, body, {
         headers: {
           Authorization: "Sthefany-Lara-Maryam"
@@ -30,9 +32,10 @@ export default class TelaCadastro extends React.Component {
 
     .then((res) => {
         alert ("Usuário(a) cadastrado(a) com sucesso!")
+        this.setState({nome:"", email:""})
     })
     .catch((err) => {
-        console.log(err)
+         alert(err.response.data.message)
     })
 
   }
@@ -44,7 +47,7 @@ export default class TelaCadastro extends React.Component {
            <h2>Cadastro</h2>
            <input 
            placeholder={"Nome"}
-           value={this.state.name}
+           value={this.state.nome}
            onChange={this.handleNome}
            />
            <input 
