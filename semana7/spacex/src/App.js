@@ -1,6 +1,15 @@
 import './App.css';
 import React from 'react';
 import axios from 'axios';
+import styled from 'styled-components'
+
+const AppContainer = styled.div`
+  border: 1px solid black;
+  background-color: #0b687a;
+  color: whitesmoke;
+
+
+`
 
 export default class App extends React.Component {
 
@@ -33,16 +42,18 @@ export default class App extends React.Component {
           <p>Nome: {mission.mission_name}</p>
           <p>Fabricantes: {mission.manufacturers.map((manufacturer) => <p>{manufacturer}</p>)}
           </p>
-          <a href={mission.wikipedia}>Link para a Wikipédia</a>
+          <button><a href={mission.wikipedia}>Link para a Wikipédia</a></button>
           <hr />
         </div>
       );
     })
     return (
+    <AppContainer>
       <div className="App">
         <h1> SpaceX Missions</h1>
         {missionsList}
       </div>
+    </AppContainer>
     );
   }
 }
